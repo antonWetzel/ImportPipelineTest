@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxm6pqp7hbbeb"]
+
+[ext_resource type="MeshLibrary" uid="uid://cskeiilu4hfas" path="res://cubes.blend" id="1_y6hef"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("1_y6hef")
