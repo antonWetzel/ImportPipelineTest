@@ -2,14 +2,14 @@
 
 importer="scene"
 importer_version=1
-type="MeshLibrary"
+type="PackedScene"
 uid="uid://ctjqsf5j3pxhc"
-path="res://.godot/imported/cubes.blend-2855b8c3254a098d90ae9c1f8f718532.res"
+path="res://.godot/imported/cubes.blend-2855b8c3254a098d90ae9c1f8f718532.scn"
 
 [deps]
 
 source_file="res://cubes.blend"
-dest_files=["res://.godot/imported/cubes.blend-2855b8c3254a098d90ae9c1f8f718532.res"]
+dest_files=["res://.godot/imported/cubes.blend-2855b8c3254a098d90ae9c1f8f718532.scn"]
 
 [params]
 
@@ -47,6 +47,44 @@ blender/animation/group_tracks=true
 
 [post_import]
 
-steps=[Object(AdvancedImportStepRemoveNodes,"Cube":false,"Cube001":true,"Cube002":false,"script":null)
-, Object(AdvancedImportStep,"script":Resource("res://convert_to_meshlibrary.gd"),"only_top_level_meshes":false)
-]
+steps=[{
+"position": Vector2(300, 320)
+}, {
+"position": Vector2(480, 340),
+"step": &"ImportPipelineStepRemoveNodes",
+"step_data": {
+"Cube": false,
+"Cube001": true,
+"Cube002": false
+}
+}, {
+"position": Vector2(700, 340),
+"script": Resource("res://convert_to_meshlibrary.gd"),
+"step": &"ImportPipelineStep",
+"step_data": {
+"only_top_level_meshes": false
+}
+}, {
+"position": Vector2(997.568, 396.438),
+"script": Resource("res://save.gd"),
+"step": &"ImportPipelineStep",
+"step_data": {
+"path": "res://cubes.blend"
+}
+}]
+connections=[{
+"from": 0,
+"from_port": 0,
+"to": 1,
+"to_port": 0
+}, {
+"from": 1,
+"from_port": 0,
+"to": 2,
+"to_port": 0
+}, {
+"from": 2,
+"from_port": 0,
+"to": 3,
+"to_port": 0
+}]
