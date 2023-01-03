@@ -1,0 +1,53 @@
+[post_import]
+
+steps=[{
+"path": "res://cubes.blend",
+"position": Vector2(200, 540),
+"type": "importer"
+}, {
+"path": "res://cubes.blend",
+"position": Vector2(880, 660),
+"type": "saver"
+}, {
+"path": "res://mesh_lib.res",
+"position": Vector2(880, 540),
+"type": "saver"
+}, {
+"position": Vector2(460, 540),
+"step": &"ImportPipelineStepRemoveNodes",
+"step_data": {
+"Cube": false,
+"Cube001": false,
+"Cube002": false
+},
+"type": "step"
+}, {
+"position": Vector2(640, 540),
+"script": Resource("res://convert_to_meshlibrary.gd"),
+"step": &"ImportPipelineStep",
+"step_data": {
+"only_top_level_meshes": false
+},
+"type": "step"
+}]
+connections=[{
+"from": 0,
+"from_port": 0,
+"to": 3,
+"to_port": 0
+}, {
+"from": 3,
+"from_port": 0,
+"to": 4,
+"to_port": 0
+}, {
+"from": 3,
+"from_port": 0,
+"to": 1,
+"to_port": 0
+}, {
+"from": 4,
+"from_port": 0,
+"to": 2,
+"to_port": 0
+}]

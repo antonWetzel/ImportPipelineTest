@@ -8,16 +8,6 @@
 
 config_version=5
 
-_global_script_classes=[{
-"base": "ImportPipelineStep",
-"class": &"ConvertToMeshLibrary",
-"language": &"GDScript",
-"path": "res://convert_to_meshlibrary.gd"
-}]
-_global_script_class_icons={
-"ConvertToMeshLibrary": ""
-}
-
 [application]
 
 config/name="ImportPipelineTest"
