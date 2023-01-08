@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drkmfhsese1b5"
-path="res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+uid="uid://bpdopoujgt4eu"
+path="res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.res"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://icon.svg"
-dest_files=["res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"]
+dest_files=["res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.res"]
 
 [params]
 
@@ -35,3 +35,20 @@ detect_3d/compress_to=1
 svg/scale=1.0
 editor/scale_with_editor_scale=false
 editor/convert_colors_with_editor_theme=false
+
+[post_import]
+
+pipeline=Object(ImportPipeline,"resource_local_to_scene":false,"resource_name":"","steps":[{
+"position": Vector2(380, 500),
+"type": 0
+}, {
+"position": Vector2(680, 500),
+"type": 2
+}],"connections":[{
+"from": 0,
+"from_port": 0,
+"to": 1,
+"to_port": 0
+}],"script":null)
+
+
